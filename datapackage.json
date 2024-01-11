@@ -1,0 +1,378 @@
+{ 
+  "name": "dados_hanseniase",
+  "title": "Hanseníase",
+  "owner_org": "secretaria-de-estado-de-saude-ses",
+  "frequência de atualização": "mensal",
+  "version": "0.1.0",
+  "homepage": "http://vigilancia.saude.mg.gov.br",
+  "contributors": [
+      {
+        "title": "Diretoria de Vigilância de Condições Crônicas",
+        "role": "author",
+        "email": "dvcc@saude.mg.gov.br"
+      },
+      {
+        "title": "Diretoria Central de Transparência Ativa da Controladoria-Central do Estado",
+        "role": "maintainer",
+        "email": "transparencia@cge.mg.gov.br"
+      }
+  ],
+  "licenses": [
+      {
+        "name": "CC-BY-4.0",
+        "title": "Creative Commons Attribution 4.0",
+        "path": "https://creativecommons.org/licenses/by/4.0/"
+      }
+  ],
+  "keywords": [
+      "Hanseníase"
+  ],
+  "resources": [
+    {
+      "path": "data/dados_hanseniase.csv",
+      "name": "dados_hanseniase",
+      "profile": "tabular-data-resource",
+      "scheme": "file",
+      "format": "csv",
+      "hashing": "md5",
+      "encoding": "utf-8-sig",
+      "dialect": {
+        "delimiter": ";"
+      },
+      "schema": {
+        "fields": [
+          {
+            "name": "DT_NOTIFIC",
+            "type": "string",
+            "title": "Data de Notificação",
+            "description": "Data de Notificação"
+          },
+          {
+            "name": "ID_MUNICIP",
+            "type": "string",
+            "title": "Município de Notificação",
+            "description": "Município de Notificação"
+          },
+          {
+            "name": "ID_REGIONA",
+            "type": "string",
+            "title": "Regional de Notificação",
+            "description": "Regional de Notificação"
+          },
+          {
+            "name": "ID_UNIDADE",
+            "type": "integer",
+            "title": "Unidade de Notificação",
+            "description": "Unidade de Notificação"
+          },
+          {
+            "name": "DT_DIAG",
+            "type": "string",
+            "title": "Data do diagnóstico",
+            "description": "Data do diagnóstico"
+          },
+          {
+            "name": "DT_NASC",
+            "type": "string",
+            "title": "Data de Nascimento",
+            "description": "Data de Nascimento"
+          },
+          {
+            "name": "NU_IDADE_N",
+            "type": "integer",
+            "title": "Idade",
+            "description": "Idade"
+          },
+          {
+            "name": "CS_SEXO",
+            "type": "string",
+            "title": "Sexo",
+            "description": "Sexo",
+            "constraints": {
+                "enum": [
+                  "Feminino",
+                  "Masculino",
+                  "Ignorado"
+                ]
+            }
+          },
+          {
+            "name": "CS_GESTANT",
+            "type": "string",
+            "title": "Gestante",
+            "description": "Gestante",
+            "constraints": {
+              "enum": [
+                "1° Trimestre",
+                "2° Trimestre",
+                "3° Trimestre",
+                "Idade gestacional ignorada",
+                "Não",
+                "Não se aplica",
+                "Ignorado"
+              ]
+            }
+          },
+          {
+            "name": "CS_RACA",
+            "type": "string",
+            "title": "Raça/Cor",
+            "description": "Raça/Cor",
+            "constraints": {
+                "enum": [
+                  "Branca",
+                  "Preta",
+                  "Amarela",
+                  "Parda",
+                  "Indígena",
+                  "Ignorado"
+                ]
+            }
+          },
+          {
+            "name": "CS_ESCOL_N",
+            "type": "string",
+            "title": "Escolaridade",
+            "description": "Escolaridade",
+            "constraints": {
+              "enum": [
+                  "Analfabeto ",
+                  "1ª a 4ª série incompleta do EF",
+                  "4ª série completa EF",
+                  "5ª a 8ª série incompleta do EF",
+                  "Ensino fundamental completo",
+                  "Ensino médio incompleto",
+                  "Ensino médio completo",
+                  "Educação superior incompleta",
+                  "Educação superior completa",
+                  "Ignorado",
+                  "Não se aplica"
+              ]
+            }
+          },
+          {
+            "name": "ID_MN_RESI",
+            "type": "string",
+            "title": "Município de Residência",
+            "description": "Município de Residência"
+          },
+          {
+            "name": "ID_RG_RESI",
+            "type": "string",
+            "title": "Regional de Residência",
+            "description": "Regional de Residência"
+          },
+          {
+            "name": "NU_LESOES",
+            "type": "integer",
+            "title": "Número de lesões",
+            "description": "Número de lesões dermatológicas apresentadas pelo paciente por ocasião do diagnóstico"
+          },
+          {
+            "name": "FORMACLINI",
+            "type": "string",
+            "title": "Forma clínica",
+            "description": "Forma clínica inicial por ocasião do diagnóstico, segundo classificação de Madrid",
+            "constraints": {
+              "enum": [
+                  "I(indeterminada)",
+                  "T(tuberculoide)",
+                  "D(dimorfa)",
+                  "V(virchowiana)",
+                  "Não classificado"
+              ]
+            }
+          },
+          {
+            "name": "AVALIA_N",
+            "type": "string",
+            "title": "Avaliação do grau incapacidade física por ocasião do diagnóstico",
+            "description": "Avaliação do grau incapacidade física por ocasião do diagnóstico",
+            "constraints": {
+              "enum": [
+                  "Grau zero",
+                  "Grau I",
+                  "Grau II",
+                  "Não avaliado"
+              ]
+            }
+          },
+          {
+            "name": "CLASSOPERA",
+            "type": "string",
+            "title": "Classificação operacional",
+            "description": "Classificação operacional, por ocasião do diagnóstico, para eleição do esquema terapêutico",
+            "constraints": {
+              "enum": [
+                  "MB - Multibacilar",
+                  "PB - Paucibacilar"
+              ]
+            }
+          },
+          {
+            "name": "MODOENTR",
+            "type": "string",
+            "title": "Modo de entrada ",
+            "description": "Modo de entrada do paciente no sistema",
+            "constraints": {
+              "enum": [
+                  "Caso novo",
+                  "Transferência do mesmo município",
+                  "Transferência de outro município",
+                  "Transferência de outro estado",
+                  "Transferência de outro país",
+                  "Recidiva",
+                  "Outros reingressos",
+                  "Ignorado"
+              ]
+            }
+          },
+          {
+            "name": "MODODETECT",
+            "type": "string",
+            "title": "Modo de detecção do caso novo",
+            "description": "Modo de detecção do caso novo",
+            "constraints": {
+              "enum": [
+                  "Encaminhamento",
+                  "Demanda espontânea",
+                  "Exame de coletividade",
+                  "Exame de contatos",
+                  "Outros modos",
+                  "Ignorado"
+              ]
+            }
+          },
+          {
+            "name": "BACILOSCO",
+            "type": "string",
+            "title": "Baciloscopia",
+            "description": "Resultado da baciloscopia",
+            "constraints": {
+              "enum": [
+                  "Positiva",
+                  "Negativa",
+                  "Não realizada",
+                  "Ignorado"
+              ]
+            }
+          },
+          {
+            "name": "DTINICTRAT",
+            "type": "string",
+            "title": "Data do início do tratamento",
+            "description": "Data do início do tratamento"
+          },
+          {
+            "name": "ESQ_INI_N",
+            "type": "string",
+            "title": "Esquema terapêutico",
+            "description": "Esquema terapêutico instituído por ocasião do diagnostico",
+            "constraints": {
+              "enum": [
+                  "PQT/PB/6 doses",
+                  "PQT/MB/12 doses",
+                  "Outros esquemas substitutos"
+              ]
+            }
+          },
+          {
+            "name": "CONTREG",
+            "type": "integer",
+            "title": "Número de pessoas com contato",
+            "description": "Número de pessoas que residam ou tenham residido, nos últimos 5 anos com o doente, a contar da Data do diagnóstico"
+          },
+          {
+            "name": "NERVOSAFET",
+            "type": "integer",
+            "title": "Número de nervos afetados",
+            "description": "Número de nervos afetados"
+          },
+          {
+            "name": "DT_NOTI_AT",
+            "type": "string",
+            "title": "Data de notificação feito pela unidade de saúde",
+            "description": "Data de notificação do caso pela unidade de saúde responsável pelo tratamento atual do caso"
+          },
+          {
+            "name": "DTULTCOMP",
+            "type": "string",
+            "title": "Data do último comparecimento",
+            "description": "Data do último comparecimento do paciente na unidade de saúde ou atendimento por agente de saúde"
+          },
+          {
+            "name": "CLASSATUAL",
+            "type": "string",
+            "title": "Classificação atual",
+            "description": "Classificação operacional do caso para eleição do esquema terapêutico adequado",
+            "constraints": {
+              "enum": [
+                  "MB(Multibacilar)",
+                  "PB(Paucibacilar)"
+              ]
+            }
+          },
+          {
+            "name": "AVAL_ATU_N",
+            "type": "string",
+            "title": "Avaliação do grau de incapacidade física",
+            "description": "Avaliação do grau de incapacidade física no momento da cura",
+            "constraints": {
+              "enum": [
+                  "Grau zero",
+                  "Grau I",
+                  "Grau II",
+                  "Não avaliado",
+                  "Ignorado"
+              ]
+            }
+          },
+          {
+            "name": "ESQ_ATU_N",
+            "type": "integer",
+            "title": "Esquema terapêutico em uso atual",
+            "description": "Esquema terapêutico em uso atual"
+          },
+          {
+            "name": "DOSE_RECEB",
+            "type": "integer",
+            "title": "Número de doses",
+            "description": "Número de doses supervisionadas recebidas sob supervisão"
+          },
+          {
+            "name": "CONTEXAM",
+            "type": "integer",
+            "title": "Número de contatos",
+            "description": "Número de contatos intradomiciliares submetidos a exame dermatoneurológico"
+          },
+          {
+            "name": "DTALTA_N",
+            "type": "string",
+            "title": "Data da alta",
+            "description": "Data da alta"
+          },
+          {
+            "name": "TPALTA_N",
+            "type": "string",
+            "title": "Tipo de Saída",
+            "description": "Tipo de Saída",
+            "constraints": {
+              "enum": [
+                  "Cura",
+                  "Óbito",
+                  "Abandono",
+                  "Erro diagnóstico",
+                  "transferência para outro estado",
+                  "Transferência para mesmo município",
+                  "Transferência para outro município",
+                  "Transferência para outro estado",
+                  "Transferência para outro país"
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "profile": "data-package"
+}

@@ -1,6 +1,6 @@
 { 
-  "name": "dados_hanseniase",
-  "title": "Hanseníase",
+  "name": "dados_hanseniase_ses",
+  "title": "Hanseniase",
   "owner_org": "secretaria-de-estado-de-saude-ses",
   "frequência de atualização": "mensal",
   "version": "0.1.0",
@@ -30,15 +30,13 @@
   "resources": [
     {
       "path": "data/dados_hanseniase.csv",
+      "title": "Dados Hanseníase",
       "name": "dados_hanseniase",
       "profile": "tabular-data-resource",
       "scheme": "file",
       "format": "csv",
       "hashing": "md5",
       "encoding": "utf-8-sig",
-      "dialect": {
-        "delimiter": ";"
-      },
       "schema": {
         "fields": [
           {

@@ -1,4 +1,4 @@
-A hanseníase é uma doença infecciosa de evolução crônica. Permanece endêmica em várias regiões do mundo, principalmente na Índia, no Brasil e na Indonésia. Está relacionada à condições econômicas, sociais e ambientais. No Brasil, ainda é considerada um importante desafio em saúde pública!
+A hanseníase é uma doença infecciosa de evolução crônica. Permanece endêmica em várias regiões do mundo, principalmente na Índia, no Brasil e na Indonésia. Está relacionada à condições econômicas, sociais e ambientais. No Brasil, ainda é considerada um importante desafio em saúde pública.
 
 A vigilância epidemiológica da hanseníase é fundamental para compreender a prevalência, incidência e distribuição da doença, permitindo o desenvolvimento de políticas públicas eficazes para prevenção e controle.
 
